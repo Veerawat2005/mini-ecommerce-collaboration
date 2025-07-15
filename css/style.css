@@ -15,3 +15,51 @@ main {justify-content: center; padding: 1rem; }
 .product-card img { max-width: 100%; height: auto; }
 .product-card h3 { font-size: 1.1em; }
 .product-card p { color: #888; }
+
+#loader {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #333;
+}
+
+
+
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* ✅ เพิ่มเอฟเฟกต์ลื่นไหล */
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    /* ✅ เพิ่มการขยายเวลา hover */
+    transform: scale(1.05);
+}
+
+
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+
+
+.product-card {
+    width: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
