@@ -1,5 +1,5 @@
-body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; }
-header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #ffffff; color: #333;  }
+header { background: #785b79; color: #111; padding: 2rem 1rem; text-align: center;  border-bottom: 1px solid #eee;  font-size: 1.5rem; font-weight: bold;  letter-spacing: 1px; }
 input[type="text"] { width: 60%; padding: 8px; }
 main {justify-content: center; padding: 1rem; }
 .product-card {
@@ -28,14 +28,14 @@ main {justify-content: center; padding: 1rem; }
 
 
 .product-card {
-    background: #fff;
+    background: #fff7f7;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 10px;
     padding: 15px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(255, 93, 93, 0.1);
 
     /* ✅ เพิ่มเอฟเฟกต์ลื่นไหล */
     transition: transform 0.3s ease;
@@ -58,8 +58,32 @@ main {justify-content: center; padding: 1rem; }
 
 
 
+.product-card img {
+  width: 400px;   /* ปรับความกว้างตามต้องการ */
+  height: 50%;   /* ให้ความสูงอัตโนมัติ เพื่อไม่ให้ภาพเพี้ยน */
+  border-radius: 8px; /* เพิ่มความโค้งมุม (ถ้าต้องการ) */
+  object-fit: cover;  /* ครอบภาพให้พอดีกรอบ */
+}
+
+
 .product-card {
-    width: 200px;
-    max-width: 100%;
-    box-sizing: border-box;
+  width: 250px; /* กำหนดขนาดของการ์ด */
+  padding: 16px;
+  border: 1px solid #120000;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; /* ให้ขึ้นบรรทัดใหม่ได้ */
+  word-wrap: break-word; /* หักคำถ้ายาวเกิน */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card p,
+.product-card h3 {
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin-bottom: 8px;
 }

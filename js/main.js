@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>ราคา: ${product.price.toLocaleString()} บาท</p> <!-- ✅ มี comma -->
+                <p>ศิลปิน: ${product.artist} </p> 
+                <p>แรงบันดาลใจ: ${product.inspiration} </p> 
             `;
             productList.appendChild(card);
         });
